@@ -5,7 +5,7 @@ import Axios from "axios";
 import { animations } from 'react-animation'
 
 
-
+import "../css/animate.css";
 
 
 
@@ -121,7 +121,7 @@ export class ShowData extends React.Component {
      
    
     return (
-      <div   className={this.state.deleted === true ? "user_container ": "user_container"} style={{animation: animations.popIn}}>
+      <div   className={this.state.deleted === true ? "animates fadeOut": "user_container"} style={{animation: animations.popIn}}>
         <img src="https://placekitten.com/100/100" alt=""/>
         <h1>
           {this.props.name} {this.props.lastname}
